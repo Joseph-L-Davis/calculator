@@ -7,6 +7,9 @@ const firstNumberC = document.getElementById('first-number-c');
 const secondNumberC = document.getElementById('second-number-c');
 const firstNumberD = document.getElementById('first-number-d');
 const secondNumberD = document.getElementById('second-number-d');
+
+
+
 const answer1 = document.getElementById('answer-1');
 const answer2 = document.getElementById('answer-2');
 const answer3 = document.getElementById('answer-3');
@@ -28,6 +31,4 @@ doMath.addEventListener('click', () =>{
 
 
 
-
-// set event listeners to update on each button, do math and update DOM
 
