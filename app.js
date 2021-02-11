@@ -18,6 +18,7 @@ const doMath = document.getElementById('button');
 
 doMath.addEventListener('click', () =>{
     answer1.textContent = Number(firstNumber.value) + Number(secondNumber.value);
+
 });
 doMath.addEventListener('click', () =>{
     answer2.textContent = Number(firstNumberB.value) - Number(secondNumberB.value);
@@ -29,6 +30,16 @@ doMath.addEventListener('click', () =>{
     answer4.textContent = Number(firstNumberD.value) / Number(secondNumberD.value);
 });
 
-
-
+function add(firstNumber,secondNumber) {
+    return firstNumber + secondNumber;
+}
+function subtract(firstNumber,secondNumber) {
+    return firstNumber - secondNumber;
+}
+function multiply(firstNumber,secondNumber) {
+    return firstNumber * secondNumber;
+}
+function divide(firstNumber,secondNumber) {
+    return firstNumber / secondNumber;
+}
 
