@@ -16,23 +16,23 @@ import { add, subtract, multiply, divide } from './utilities.js';
 //const answer4 = document.getElementById('answer-4');
 
 
-function initOperator(firstInput, secondInput, result, button, calc) {
-    const firstNum = document.getElementById(firstInput); 
-    const secondNum = document.getElementById(secondInput);
+function initOperator(firstNumber, secondNumber, result, button, calc) {
+    const firstNum = document.getElementById(firstNumber); 
+    const secondNum = document.getElementById(secondNumber);
     const doMath = document.getElementById(button);
-    const ans = document.getElementById(result);
+    const answer = document.getElementById(result);
     
     
     doMath.addEventListener('click', () =>{
-        ans.value = calc(Number(firstNum.value), Number(secondNum.value));
+        answer.textContent = calc(Number(firstNum.value), Number(secondNum.value));
     });
 }
     
 
-initOperator('firstNumber', 'secondNumber', 'doMath', 'sum', add);
-//initOperator('firstNumberB', 'secondNumberB', 'ans', 'doMath', subtract);
-//initOperator('firstNumberC', 'secondNumberC', 'ans', 'doMath', multiply);
-//initOperator('firstNumberD', 'secondNumberD', 'ans', 'doMath', divide);
+initOperator('firstNumber', 'secondNumber', 'sum', 'button', add);
+initOperator('firstNumberB', 'secondNumberB', 'difference', 'button', subtract);
+initOperator('firstNumberC', 'secondNumberC', 'product', 'button', multiply);
+initOperator('firstNumberD', 'secondNumberD', 'quotient', 'button', divide);
 
 
 

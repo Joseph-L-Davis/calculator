@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 3fr;
-  grid-template-rows: 3fr;
   background-color: bisque;
 }
 
@@ -32,26 +30,6 @@
 }
 
 
-
-.nums {
-  height: 25px;
-  border-radius: 5;
-  font-size: larger;
-}
-
-/*.ans {
-  font-size: 150%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  position: relative;
-  left: 280px;
-  top: -45px;
-  background-color: rgb(255, 255, 255);
-  width: 80px;
-  border: 5%;
-  border-color: black;
-
-}
-*/
 #equals {
   font-size: 150%;
 
